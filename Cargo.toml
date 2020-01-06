@@ -1,0 +1,19 @@
+[package]
+name = "esp-at"
+version = "0.1.0"
+authors = ["David Flemström <david.flemstrom@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+embedded-hal = "0.2.3"
+enumset = "0.4.4"
+failure = { version = "0.1.6", default-features = false, features = ["derive"] }
+heapless = "0.5.1"
+nb = "0.1.2"
+
+[dev-dependencies]
+failure = "0.1.6"
+serial = "0.4.0"
+serial-embedded-hal = "0.1.2"
